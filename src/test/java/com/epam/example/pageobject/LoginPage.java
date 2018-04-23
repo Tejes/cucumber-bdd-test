@@ -18,4 +18,10 @@ public class LoginPage {
 
     @FindBy(css = ".alert > ol > li")
     public WebElement errorMessage;
+    
+    @FindBy(id = "email_create")
+    public WebElement regEmailField;
+
+    @FindBy(id = "SubmitCreate")
+    public WebElement regSubmit;
 }

@@ -38,4 +38,14 @@ public class LoginPageStepDefs {
     public void click_on_the_submit_button() {
         loginPage.submitButton.click();
     }
+    
+    @When("^I add \"(.*?)\" into the email address input field on the create account module$")
+	public void i_add_into_the_email_address_input_field_on_the_create_account_module(String email) {
+		loginPage.regEmailField.sendKeys(email);
+	}
+    
+    @When("^click on the create account button$")
+    public void click_on_the_create_account_button() throws Throwable {
+        loginPage.regSubmit.click();
+    }
 }
